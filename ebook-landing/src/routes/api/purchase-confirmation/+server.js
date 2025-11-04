@@ -19,6 +19,6 @@ export async function POST({ request }){
         text: `Thank you for your purchase, ${customerName}!`,
         html: `<p>Thank you for your purchase, ${customerName}!</p>`,
     }
-    console.log(requestBody);
+    await sgMail.send(message);
     return json({ message: "Purchase confirmed" });
 }
