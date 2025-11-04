@@ -1,3 +1,13 @@
+<script>
+  let { question, answer, isExpanded , ...props} = $props();
+</script>
+<button class="container" class:container-expanded={isExpanded} {...props}>
+  <div class="question-and-answer">
+    <h3 class="question">{question}</h3>
+    <p class="answer">{answer}</p>
+  </div>
+</button>
+
 <style>
   .container {
     display: flex;

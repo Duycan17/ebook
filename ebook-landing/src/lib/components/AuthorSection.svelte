@@ -1,3 +1,16 @@
+<script>
+  import authorImage from '$assets/book_cover.png';
+
+</script>
+<section class="author-section">
+  <h2 class="mb-l">About the author</h2>
+  <div class="author-container">
+    <img src={authorImage} alt="Author Image"/>
+    <div class="author-text">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati sed iure, eius molestias quo eveniet earum natus tenetur excepturi doloribus sit quaerat, minus eaque libero, ullam fuga sint laborum. Minima.</p>
+    </div>
+  </div>
+</section>
 <style>
   .author-section {
     padding: 80px 0;
