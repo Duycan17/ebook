@@ -10,7 +10,7 @@ sgMail.setApiKey(SENDGRID_API_KEY);
 
 export async function POST({ request }){
     const requestBody = await request.json();
-    const customerEmail = requestBody.data.object.customer_details.email;
+    const customerEmail = "khanhhh.duy@gmail.com"
     const customerName = requestBody.data.object.customer_details.name;
     const message = {
         to: customerEmail,
